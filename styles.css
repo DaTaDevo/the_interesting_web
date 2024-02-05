@@ -68,7 +68,6 @@ body{
     min-width: 300px;
 }
 
-
 #contact_info{
     display: block;
     letter-spacing: 1px;
@@ -89,7 +88,13 @@ body{
   }
 
 @keyframes _scaleup-rest {
-    to{
+    0% {
+        border-right:1px rgba(255, 255, 255, 1) solid;
+    }
+    100%{
+        border-right:1px rgba(255, 255, 255, 0) solid;
+    }
+    100%{
         width: 260px;
     }
   }
@@ -105,7 +110,7 @@ body{
         }
   }
   @keyframes appear {
-    to {
+    to {   
         opacity: 1;
     }
   }
