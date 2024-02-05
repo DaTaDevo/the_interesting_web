@@ -69,10 +69,11 @@ body{
 }
 
 #contact_info{
+    font-family: "Helvetica";
     display: block;
     letter-spacing: 1px;
     font-size: 10pt;
-    font-weight: 100;
+    font-weight: 300;
     color: whitesmoke;
     margin-top: 30px;
     text-align: center;
