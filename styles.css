@@ -32,7 +32,7 @@ body{
     height: 43px;
     width: 0px;
     animation: _scaleup-the 0.8s cubic-bezier(0,0,0.25,1) forwards;
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
 }
 
 #logo #the div {
@@ -40,13 +40,14 @@ body{
 }
 
 #logo #i {
-    /* font-size: 48pt; */
+    font-size: 56pt;
     margin: 0;
     overflow: hidden;
     display: flex;
-    height: 43px;
+    align-items: start;
+    height: fit-content;
     width: fit-content;
-    /* animation: shrinkdown 1.2s cubic-bezier(0,0.25,0.25,1) forwards; */
+    animation: shrinkdown 1.0s cubic-bezier(0.29,0.51,0.07,0.75) 1.5s forwards;
 }
 
 #logo #i_rest {
@@ -58,7 +59,7 @@ body{
     height: 43px;
     width: 0px;
     animation: _scaleup-rest 0.8s cubic-bezier(0,0.25,0.25,1) forwards;
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
 }
 
 #logo #i_rest div{
@@ -74,7 +75,9 @@ body{
     color: whitesmoke;
     margin-top: 10px;
     text-align: center;
+    opacity: 0;
     width: 100%;
+    animation: appear 1.2s cubic-bezier(0.29,0.51,0.07,0.75) 2.5s forwards;
 }
 
 @keyframes slidein {
@@ -92,5 +95,15 @@ body{
   @keyframes _scaleup-the {
     to{
         width: 75px;
+    }
+  }
+  @keyframes shrinkdown {
+        to {
+            font-size:28pt;
+        }
+  }
+  @keyframes appear {
+    to {
+        opacity: 1;
     }
   }
