@@ -8,29 +8,65 @@ body{
     align-items: center;
     font-family: "DM Serif Display", serif;
 }
-#back_texture{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-#back_texture img {
-    opacity: 55%;
-    width: 100%;
-    height: 100%;
-}
+
 .content {
     display: flex;
     flex-direction: column;
 }
+
 #logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     letter-spacing: 2px;
     font-size: 28pt;
     font-weight: 500;
     color:whitesmoke;
 }
-#logo span {
-    font-size: 32pt;
+
+#logo #the {
+    /* border: 1px white solid; */
+    margin: 0;
+    padding-right:0;
+    overflow: hidden;
+    height: 43px;
+    width: 0px;
+    animation: _scaleup-the 0.8s cubic-bezier(0,0,0.25,1) forwards;
+    animation-delay: 1.5s;
 }
+
+#logo #the div {
+    min-width: fit-content;
+}
+
+#logo #i {
+    font-size: 48pt;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    height: 43px;
+    width: fit-content;
+    animation: shrinkdown 1.2s cubic-bezier(0,0.25,0.25,1) forwards;
+}
+
+#logo #i_rest {
+    /* border: 1px white solid; */
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items:baseline;
+    height: 43px;
+    width: 0px;
+    animation: _scaleup-rest 0.8s cubic-bezier(0,0.25,0.25,1) forwards;
+    animation-delay: 1.5s;
+}
+
+#logo #i_rest div{
+    position: relative;
+    min-width: 300px;
+}
+
+
 #contact_info{
     letter-spacing: 1px;
     font-size: 10pt;
@@ -40,3 +76,21 @@ body{
     text-align: center;
     width: 100%;
 }
+
+@keyframes slidein {
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+@keyframes _scaleup-rest {
+    to{
+        width: 260px;
+    }
+  }
+
+  @keyframes _scaleup-the {
+    to{
+        width: 75px;
+    }
+  }
