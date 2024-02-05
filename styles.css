@@ -31,7 +31,7 @@ body{
     overflow: hidden;
     height: 43px;
     width: 0px;
-    animation: _scaleup-the 0.8s cubic-bezier(0,0,0.25,1) forwards;
+    animation: _scaleup-the 0.8s cubic-bezier(0.15,0,0.25,1) forwards;
     animation-delay: 2.5s;
 }
 
@@ -56,9 +56,9 @@ body{
     display: flex;
     justify-content: left;
     align-items:baseline;
-    height: 43px;
+    height: fit-content;
     width: 0px;
-    animation: _scaleup-rest 0.8s cubic-bezier(0,0.25,0.25,1) forwards;
+    animation: _scaleup-rest 0.8s cubic-bezier(0.15,0.25,0.25,1) forwards;
     animation-delay: 2.5s;
 }
 
