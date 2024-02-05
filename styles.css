@@ -1,0 +1,42 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0a0a0a;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Serif Display", serif;
+}
+#back_texture{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#back_texture img {
+    opacity: 55%;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+    letter-spacing: 2px;
+    font-size: 28pt;
+    font-weight: 500;
+    color:whitesmoke;
+}
+#logo span {
+    font-size: 32pt;
+}
+#contact_info{
+    letter-spacing: 1px;
+    font-size: 10pt;
+    font-weight: 100;
+    color: whitesmoke;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
